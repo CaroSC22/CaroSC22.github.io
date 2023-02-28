@@ -1,0 +1,264 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+  
+  body {
+     background-image: url('/IMAGENES/Fondo.jpg');
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+  }
+  
+  /* Hoja */
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: #E3E3E3;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+  }
+  
+  .datosPersonales {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  .datosPersonales .imagen {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow:hidden;
+  }
+
+  .datosPersonales .imagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Columna Izquierda */
+  .container .left_Side {
+    position: relative;
+    background: #FFFC4A;
+    padding: 40px;
+  }
+
+  .infoContacto {
+    padding-top: 40px;
+  }
+
+  .titulo {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .infoContacto ul {
+    position: relative;
+  }
+
+  .infoContacto ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .infoContacto ul li .icono {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #737373
+  }
+
+  .infoContacto ul li span {
+    color: black;
+    font-weight: 300;
+  }
+
+  .infoContacto.educacion li {
+    margin-bottom: 15px;
+  }
+
+  .infoContacto.educacion h5 {
+    color: #737373 ;
+    font-weight: 500;
+  }
+
+  .infoContacto.educacion h4:nth-child(2) {
+    color: black;
+    font-weight: 500;
+  }
+
+  .infoContacto.educacion h4 {
+    color: black;
+    font-weight: 300;
+  }
+
+  .infoContacto.idioma .porcentaje {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #E3E3E3;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .infoContacto.idioma .porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:#737373;
+  }
+
+  /* Columna Derecha */
+  .container .right_Side {
+    position: relative;
+    background: #F9F9F9;
+    padding: 40px;
+  }
+
+  .perfil {
+    margin-bottom: 50px;
+  }
+
+  .perfil:last-child {
+    margin-bottom: 0;
+  }
+
+  .titulo2
+  {
+    color:#5B5B5B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .boton {
+    background-color: #737373;
+    border: none;
+    border-radius: 50%;
+    color: #E3E3E3;
+    font-size: 18px;
+    padding: 8px 18px;
+    box-shadow: 0 0 10px 0 #737373;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .show {
+    display: none;
+  }
+
+  p
+  {
+    color: #737373;
+  }
+
+  .perfil .caja {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+  }
+
+  .perfil .caja .año_compañia {
+    min-width: 150px;
+  }
+
+  .perfil .caja .año_compañia h5 {
+    text-transform: uppercase;
+    color: #737373;
+    font-weight: 600;
+  }
+
+  .perfil .caja .text h4 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 16px;
+  }
+
+  .habilidades .caja {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .habilidades .caja h4 {
+    text-transform: uppercase;
+    color: #737373;
+    font-weight: 500;
+  }
+
+  .habilidades .caja .porcentaje {
+    position:relative;
+    width: 100%;
+    height: 10px;
+    background: #E3E3E3;
+  }
+
+  .habilidades .caja .porcentaje div
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #737373;
+  }
+
+  .sobre_mi .titulo2 {
+  padding-top: 50px;
+  }
+
+  .sobre_mi ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .sobre_mi ul li {
+    list-style:disc;
+    color: #737373;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+
+    .container .right_Side .presentacion h2 {
+    color: black;
+    font-size: 3.9em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+  }
+
+  .container .right_Side .presentacion h2 span {
+    color: #737373;
+    font-size: 0.8em;
+    font-weight: 300;
+  }
